@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>525</width>
+    <height>141</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>525</width>
+    <height>141</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>525</width>
+    <height>141</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>我的音乐</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/image/image/ios8_Music_32px_1173465_easyicon.net.png</normaloff>:/image/image/ios8_Music_32px_1173465_easyicon.net.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*QDialog#Dialog
+{
+
+    border:1px solid #5F5F5F;
+	
+	border-radius:0px;
+}*/</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>80</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+
+	background-image: url(:/image/image/control_rewind_48px_1116022_easyicon.net.png);
+background-color: rgba(255, 255, 255,0);
+border-style:outset;
+border-color:rgba(255,255,255,0);
+border-radius:4px;
+
+}
+QPushButton:hover{
+
+
+
+	background-color: rgb(255, 255, 255,100);
+
+
+}
+QPushButton:pressed{
+	background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>80</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+
+
+background-color: rgba(255, 255, 255,0);
+border-style:outset;
+border-color:rgba(255,255,255,0);
+border-radius:4px;
+
+}
+QPushButton:hover{
+
+
+
+	background-color: rgb(255, 255, 255,100);
+
+
+}
+QPushButton:pressed{
+	background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>80</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+
+	background-image: url(:/image/image/control_fastforward_48px_1116016_easyicon.net.png);
+background-color: rgba(255, 255, 255,0);
+border-style:outset;
+border-color:rgba(255,255,255,0);
+border-radius:4px;
+
+}
+QPushButton:hover{
+
+
+
+	background-color: rgb(255, 255, 255,100);
+
+
+}
+QPushButton:pressed{
+	background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSlider" name="horizontalSlider">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>505</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+    QSlider::add-page:Horizontal
+     {     
+background-color: rgba(255, 255, 255,100);
+        height:4px;  
+     } 
+     QSlider::sub-page:Horizontal   
+    {  
+background-color: rgb(255, 255, 255);
+        height:4px;
+     }
+    QSlider::groove:Horizontal   
+    { 
+        background:transparent; 
+        height:4px;
+    }  
+    QSlider::handle:Horizontal  
+    { 
+        height:16px; 
+        width:16px; 
+	
+	border-image: url(:/image/image/圆形 (9).png);
+  margin: -6 0px; 
+    }
+      
+</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>10</y>
+     <width>351</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 11pt &quot;Comic Sans MS&quot;;
+color: rgb(112, 112, 112);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 italic 9pt &quot;Comic Sans MS&quot;;
+color: rgb(112, 112, 112);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>488</x>
+     <y>5</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+
+	background-image: url(:/image/image/叉号.png);
+background-color: rgba(255, 255, 255,0);
+border-style:outset;
+border-color:rgba(255,255,255,0);
+border-radius:4px;
+
+}
+QPushButton:hover{
+
+
+
+	background-color: rgb(255, 255, 255,100);
+
+
+}
+QPushButton:pressed{
+	background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>448</x>
+     <y>5</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+
+	background-image: url(:/image/image/最小化 (1).png);
+
+background-color: rgba(255, 255, 255,0);
+border-style:outset;
+border-color:rgba(255,255,255,0);
+border-radius:4px;
+
+}
+QPushButton:hover{
+
+
+
+	background-color: rgb(255, 255, 255,100);
+
+
+}
+QPushButton:pressed{
+	background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+
+
+background-color: rgba(255, 255, 255,0);
+border-style:outset;
+border-color:rgba(255,255,255,0);
+border-radius:4px;
+
+}
+QPushButton:hover{
+
+
+
+	background-color: rgb(255, 255, 255,100);
+
+
+}
+QPushButton:pressed{
+	background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>90</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+
+
+background-color: rgba(255, 255, 255,0);
+border-style:outset;
+border-color:rgba(255,255,255,0);
+border-radius:4px;
+
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+
+	background-image: url(:/image/image/ios8_Music_48px_1173465_easyicon.net.png);
+
+background-color: rgba(255, 255, 255,0);
+border-style:outset;
+border-color:rgba(255,255,255,0);
+border-radius:4px;
+
+}
+QPushButton:hover{
+
+
+
+	background-color: rgb(255, 255, 255,100);
+
+
+}
+QPushButton:pressed{
+	background-color: rgba(95, 95, 95,100);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
